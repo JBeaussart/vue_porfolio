@@ -88,6 +88,7 @@ header {
 .nav_links li a {
   color: white;
   transition: all 0.3s ease 0s;
+  font-size: 18px;
 }
 
 #nav.sticky .nav_links li a {
@@ -108,7 +109,8 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: white
+  color: white;
+  font-size: 18px;
 }
 
 button:hover {
