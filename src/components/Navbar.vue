@@ -30,6 +30,13 @@ export default {
 </script>
 
 <style scoped>
+
+#nav {
+  position: sticky;
+  top: 0;
+  background: #e2e2e2;
+}
+
 li,
 a,
 button {
