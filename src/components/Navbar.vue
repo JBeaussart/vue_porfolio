@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <header>
+    <header class="container">
       <div class="logo_container">
         <li><router-link to="/"><i class="fab fa-accusoft logo"></i></router-link></li>
       </div>
@@ -51,7 +51,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 10%;
+  padding: 15px 0%;
 }
 
 .logo {
