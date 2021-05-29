@@ -2,8 +2,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <div id="nav">
   <header>
-      <div class="logo">
-        <i class="fab fa-accusoft"></i>
+      <div class="logo_container">
+        <li><router-link to="/acceuil"><i class="fab fa-accusoft logo"></i></router-link></li>
       </div>
       <nav>
         <ul class="nav_links">
@@ -28,6 +28,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 
@@ -52,6 +54,9 @@ header {
   cursor: pointer;
   font-size: 50px;
   color: #42b983;
+}
+
+.logo_container {
   margin-right: auto;
 }
 
