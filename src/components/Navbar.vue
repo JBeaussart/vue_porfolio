@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-  <header>
+    <header>
       <div class="logo_container">
         <li><router-link to="/"><i class="fab fa-accusoft logo"></i></router-link></li>
       </div>
