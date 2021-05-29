@@ -41,6 +41,7 @@ window.addEventListener("scroll", function () {
   top: 0;
   background: #272727;
   transition: 0.5s;
+  margin-bottom: 5vh;
 }
 
 #nav.sticky {
