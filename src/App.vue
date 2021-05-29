@@ -3,11 +3,11 @@
   <div id="nav">
   <header>
       <div class="logo_container">
-        <li><router-link to="/acceuil"><i class="fab fa-accusoft logo"></i></router-link></li>
+        <li><router-link to="/"><i class="fab fa-accusoft logo"></i></router-link></li>
       </div>
       <nav>
         <ul class="nav_links">
-          <li><router-link to="/acceuil">Acceuil</router-link></li>
+          <li><router-link to="/">Acceuil</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
           <li><router-link to="/competence">Compétences</router-link></li>
           <li><router-link to="/portfolio">Portfolio</router-link></li>

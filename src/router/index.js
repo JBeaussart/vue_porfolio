@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
 import Services from '../views/Services.vue';
 import Competence from '../views/Competence.vue';
 import Acceuil from '../views/Acceuil.vue';
@@ -11,8 +10,8 @@ import Contact from '../views/Contact.vue';
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
-		component: Home,
+		name: 'Acceuil',
+		component: Acceuil,
 	},
 	{
 		path: '/Services',
@@ -23,11 +22,6 @@ const routes = [
 		path: '/Competence',
 		name: 'Competence',
 		component: Competence,
-	},
-	{
-		path: '/Acceuil',
-		name: 'Acceuil',
-		component: Acceuil,
 	},
 	{
 		path: '/Portfolio',
