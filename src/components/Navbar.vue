@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <header>
+    <header class="container">
       <div class="logo_container">
         <li><router-link to="/"><i class="fab fa-accusoft logo"></i></router-link></li>
       </div>
@@ -27,9 +27,29 @@ export default {
     msg: String
   }
 }
+
+window.addEventListener("scroll", function () {
+  const nav = document.querySelector("#nav");
+  nav.classList.toggle("sticky", window.scrollY > 50);
+});
 </script>
 
 <style scoped>
+
+#nav {
+  position: sticky;
+  top: 0;
+  background: #272727;
+  transition: 0.5s;
+  margin-bottom: 5vh;
+}
+
+#nav.sticky {
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 0.1);
+}
+
 li,
 a,
 button {
@@ -44,13 +64,13 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 10%;
+  padding: 15px 0%;
 }
 
 .logo {
   cursor: pointer;
   font-size: 50px;
-  color: #42b983;
+  color: #8b9be4;
 }
 
 .logo_container {
@@ -67,25 +87,34 @@ header {
 }
 
 .nav_links li a {
+  color: white;
+  transition: all 0.3s ease 0s;
+  font-size: 18px;
+}
+
+#nav.sticky .nav_links li a {
+  color: black;
   transition: all 0.3s ease 0s;
 }
 
 .nav_links li a:hover {
-  color: #42b983;
+  color: #8b9be4;
   transition: all 0.3s ease 0s;
 }
 
 button {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: #42b983;
+  background-color: #5462a0;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease 0;
-  color: white
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 18px;
 }
 
 button:hover {
-  background-color: #42b983dc;
-}</style>
+  background-color: #5462a0;
+}
+</style>
