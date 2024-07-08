@@ -2,20 +2,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <div id="nav">
   <header>
-      <div class="logo">
-        <i class="fab fa-accusoft"></i>
-      </div>
+      <RouterLink to="/" class="name">Jérémy Beaussart</RouterLink>
       <nav>
         <ul class="nav_links">
-          <li><router-link to="/acceuil">Acceuil</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
-          <li><router-link to="/competence">Compétences</router-link></li>
-          <li><router-link to="/portfolio">Portfolio</router-link></li>
           <li><router-link to="/tarif">Tarifs</router-link></li>
-          <li><router-link to="/apropos">À propos</router-link></li>
+          <li><router-link to="/a-propos">À propos</router-link></li>
         </ul>
       </nav>
-      <router-link to="/contact"><a class="cta"><button>contact</button></a></router-link>
+      <router-link to="/contact"><a class="cta"><button>Me contacter</button></a></router-link>
     </header>
   </div>
   <router-view/>
@@ -24,17 +19,26 @@
 <style>
 
 /* GENARALE STYLE */
+@font-face {
+    font-family: "RobotoMono";
+    src: url('~@/assets/fonts/RobotoMono.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "RobotoMono";
 }
 
+.container {
+    width: 80vw;
+    margin: auto;
+  }
 
 li,
 a,
 button {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #26332d;
@@ -48,11 +52,12 @@ header {
   padding: 30px 10%;
 }
 
-.logo {
+.name {
   cursor: pointer;
-  font-size: 50px;
+  font-size: 30px;
   color: #42b983;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .nav_links {
