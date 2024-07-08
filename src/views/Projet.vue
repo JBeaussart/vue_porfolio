@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Tarif page</h1>
+    <h1>Projet page</h1>
   </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <script>
 export default {
-  name: 'Tarif',
+  name: 'Projet',
 }
 </script>

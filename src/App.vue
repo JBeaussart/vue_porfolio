@@ -5,9 +5,9 @@
       <RouterLink to="/" class="name">Jérémy Beaussart</RouterLink>
       <nav>
         <ul class="nav_links">
-          <li><router-link to="/services">Services</router-link></li>
-          <li><router-link to="/tarif">Tarifs</router-link></li>
-          <li><router-link to="/a-propos">À propos</router-link></li>
+          <li @click="e => e.target.classList.add('active')"><router-link to="/services">Services</router-link></li>
+          <li @click="e => e.target.classList.add('active')"><router-link to="/projets">Projets</router-link></li>
+          <li @click="e => e.target.classList.add('active')"><router-link to="/a-propos">À propos</router-link></li>
         </ul>
       </nav>
       <router-link to="/contact"><a class="cta"><button>Me contacter</button></a></router-link>
@@ -17,11 +17,10 @@
 </template>
 
 <style>
-
 /* GENARALE STYLE */
 @font-face {
-    font-family: "RobotoMono";
-    src: url('~@/assets/fonts/RobotoMono.ttf');
+  font-family: "RobotoMono";
+  src: url('~@/assets/fonts/RobotoMono.ttf');
 }
 
 * {
@@ -32,8 +31,9 @@
 }
 
 .container {
-    width: 80vw;
+    width: 80%;
     margin: auto;
+    margin-top: 120px;
   }
 
 li,
@@ -50,6 +50,11 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  background: white;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .name {
@@ -58,6 +63,10 @@ header {
   color: #42b983;
   margin-right: auto;
   font-weight: bold;
+}
+
+.active {
+  border-bottom: 2px #42b983 solid;
 }
 
 .nav_links {

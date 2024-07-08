@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <h1>Home</h1>
+    <h1>Développeur fullstack</h1>
+    <p>De la conception au développement, je vous accompagne dans vos projets de développement web.</p>
+    <router-link to="/contact"><a><button>Me contacter</button></a></router-link>
+    <p><a href="#">Télécharger mon CV</a></p>
   </div>
 </template>
 
